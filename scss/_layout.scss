@@ -1,0 +1,92 @@
+/* 
+Layout Rules
+    CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
+    Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
+*/
+
+$tablet: 768px;
+$mobile: 558px;
+
+li {
+    list-style: none;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements, footer, .design-selection, .design-archives, .zen-resources,  {
+    border-style: solid;
+    border-width: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.intro {
+    padding-top: 80px;
+}
+
+.intro h1, .intro h2, {
+    padding-left: 20px;
+}
+
+
+
+.preamble, .summary {
+    margin-bottom: 20px;
+}
+
+
+
+.page-wrapper {
+    background-image: url("Iron-Man-160-18.jpg");
+}
+
+.benefits {
+    box-sizing: border-box;
+    padding-bottom: 470px;
+    @media screen and (max-width:$tablet) { 
+        padding-bottom: 0;
+    }
+    
+    @media screen and (max-width:$mobile) { 
+        padding-bottom: 0;
+    }
+}
+
+.explanation {
+    box-sizing: border-box;
+    padding-bottom: 110px;
+    @media screen and (max-width:$tablet) { 
+        padding-bottom: 0;
+    }
+    
+    @media screen and (max-width:$mobile) { 
+        padding-bottom: 0;
+    }
+}
+
+a {
+    color: #931717;
+}
+
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+
+.design-name {
+    padding-right: 45px;
+}
+
+.design-archives {
+    box-sizing: border-box;
+    padding-bottom: 195px;
+    @media screen and (max-width:$tablet) { 
+        padding-bottom: 0;
+    }
+    
+    @media screen and (max-width:$mobile) { 
+        padding-bottom: 0;
+    }
+}
+
